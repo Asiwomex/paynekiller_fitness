@@ -35,14 +35,14 @@ export function Feed() {
             <button
               type="button"
               onClick={() => setActive(i)}
-              className="group relative block aspect-[9/16] w-full overflow-hidden rounded-[1.75rem] border border-line bg-coal text-left transition-transform duration-300 active:scale-[0.98]"
+              className="group relative block aspect-[9/16] w-full overflow-hidden rounded-[1.75rem] bg-coal text-left outline outline-1 -outline-offset-1 outline-white/10 transition-transform duration-300 active:scale-[0.96]"
             >
               <LazyVideo
                 slug={reel.slug}
                 className="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105"
               />
               <span className="absolute inset-0 bg-linear-to-t from-ink/90 via-transparent to-ink/30" />
-              <span className="label absolute left-4 top-4 rounded-full bg-ink/60 px-3 py-1.5 backdrop-blur-sm">
+              <span className="label absolute left-4 top-4 whitespace-nowrap rounded-full bg-ink/60 px-3 py-1.5 backdrop-blur-sm">
                 {reel.tag}
               </span>
               <span className="absolute right-4 top-4 grid size-10 place-items-center rounded-full bg-bone text-ink transition-colors duration-300 group-hover:bg-ember">

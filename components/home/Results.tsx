@@ -18,7 +18,7 @@ export function Results() {
               <figure className="flex h-full flex-col justify-between gap-10 rounded-[2rem] border border-ink/15 p-7">
                 <div>
                   <p className="display text-6xl text-ember">{item.result}</p>
-                  <blockquote className="accent mt-5 text-pretty text-[1.7rem] leading-tight">
+                  <blockquote className="accent mt-5 text-pretty text-[1.7rem] leading-[1.25]">
                     &ldquo;{item.quote}&rdquo;
                   </blockquote>
                 </div>

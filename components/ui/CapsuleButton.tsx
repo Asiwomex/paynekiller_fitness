@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 type Props = {
   href: string;
   children: ReactNode;
-  variant?: "ember" | "bone" | "ghost";
+  variant?: "ember" | "bone" | "ink" | "ghost";
   size?: "md" | "lg";
   className?: string;
 };
@@ -13,6 +13,7 @@ type Props = {
 const variants = {
   ember: "bg-ember text-ink",
   bone: "bg-bone text-ink",
+  ink: "bg-ink text-bone",
   ghost: "border border-line text-bone hover:border-bone/50",
 };
 
@@ -28,7 +29,7 @@ export function Arrow({ className }: { className?: string }) {
 export function CapsuleButton({ href, children, variant = "ember", size = "md", className }: Props) {
   const external = href.startsWith("http");
   const classes = clsx(
-    "group inline-flex items-center justify-between gap-4 rounded-full font-medium transition-[transform,border-color] duration-300 ease-out-expo active:scale-[0.97]",
+    "group inline-flex items-center justify-between gap-4 whitespace-nowrap rounded-full font-medium transition-[transform,border-color] duration-300 ease-out-expo active:scale-[0.96]",
     size === "lg" ? "h-14 pl-7 pr-2 text-base" : "h-12 pl-6 pr-1.5 text-sm",
     variants[variant],
     className,
@@ -40,7 +41,7 @@ export function CapsuleButton({ href, children, variant = "ember", size = "md", 
         className={clsx(
           "grid place-items-center overflow-hidden rounded-full",
           size === "lg" ? "size-10" : "size-9",
-          variant === "ghost" ? "bg-bone text-ink" : "bg-ink text-bone",
+          variant === "ghost" || variant === "ink" ? "bg-bone text-ink" : "bg-ink text-bone",
         )}
       >
         <Arrow className="transition-transform duration-500 ease-out-expo group-hover:rotate-45" />

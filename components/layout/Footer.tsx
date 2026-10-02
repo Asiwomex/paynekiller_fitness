@@ -65,11 +65,21 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="shell mt-16 flex flex-col gap-2 border-t border-line pt-6 text-ash md:flex-row md:justify-between">
+      <div className="shell mt-16 flex flex-col gap-3 border-t border-line pt-6 text-ash md:flex-row md:justify-between">
         <p className="label">
           © {new Date().getFullYear()} {site.name}
         </p>
-        <p className="label">{site.tagline}</p>
+        <p className="label">
+          Powered by{" "}
+          <a
+            href="https://lytaworks.com/"
+            target="_blank"
+            rel="noopener"
+            className="text-bone underline decoration-line underline-offset-4 transition-colors hover:text-ember"
+          >
+            Lytaworks
+          </a>
+        </p>
       </div>
     </footer>
   );

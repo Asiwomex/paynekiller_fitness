@@ -21,8 +21,8 @@ export function ProgramCard({ program, className }: { program: Program; classNam
         />
         <div className="absolute inset-0 bg-linear-to-t from-coal via-transparent to-ink/40" />
         <div className="label absolute inset-x-5 top-5 flex items-center justify-between">
-          <span className="rounded-full bg-bone px-3 py-1.5 text-ink">Rx {program.rx}</span>
-          <span className="rounded-full bg-ink/60 px-3 py-1.5 backdrop-blur-sm">{program.duration}</span>
+          <span className="whitespace-nowrap rounded-full bg-bone px-3 py-1.5 text-ink">Rx {program.rx}</span>
+          <span className="whitespace-nowrap rounded-full bg-ink/60 px-3 py-1.5 backdrop-blur-sm">{program.duration}</span>
         </div>
       </div>
 

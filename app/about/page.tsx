@@ -104,7 +104,7 @@ export default function AboutPage() {
       </section>
 
       <section className="shell pb-24 md:pb-36">
-        <div className="aspect-[4/5] overflow-hidden rounded-[2rem] border border-line md:aspect-[21/9]">
+        <div className="aspect-[4/5] overflow-hidden rounded-[2rem] outline outline-1 -outline-offset-1 outline-white/10 md:aspect-[21/9]">
           <LazyVideo slug="outdoor-aerobics" />
         </div>
       </section>

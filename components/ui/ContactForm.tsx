@@ -90,7 +90,7 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="flex h-14 items-center justify-between rounded-full bg-ember pl-7 pr-2 font-medium text-ink transition-transform duration-300 active:scale-[0.97]"
+        className="flex h-14 items-center justify-between rounded-full bg-ember pl-7 pr-2 font-medium text-ink transition-transform duration-300 active:scale-[0.96]"
       >
         Open in WhatsApp
         <span className="grid size-10 place-items-center rounded-full bg-ink text-bone">

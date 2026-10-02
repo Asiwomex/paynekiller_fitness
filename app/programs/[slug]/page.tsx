@@ -40,7 +40,7 @@ export default async function ProgramPage({ params }: PageProps<"/programs/[slug
 
       <section className="shell grid gap-10 pb-24 md:grid-cols-12 md:pb-36">
         <Reveal className="md:col-span-5">
-          <div className="aspect-[4/5] overflow-hidden rounded-[2rem] border border-line bg-coal">
+          <div className="aspect-[4/5] overflow-hidden rounded-[2rem] bg-coal outline outline-1 -outline-offset-1 outline-white/10">
             <LazyVideo slug={program.clip} />
           </div>
         </Reveal>

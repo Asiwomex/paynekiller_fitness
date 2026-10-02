@@ -9,7 +9,7 @@ export function WhatsAppDock() {
         href={waLink()}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex h-14 items-center justify-between rounded-full bg-ember pl-6 pr-2 font-medium text-ink shadow-[0_8px_30px_rgb(0_0_0/0.5)] transition-transform active:scale-[0.97]"
+        className="flex h-14 items-center justify-between rounded-full bg-ember pl-6 pr-2 font-medium text-ink shadow-[0_8px_30px_rgb(0_0_0/0.5)] transition-transform active:scale-[0.96]"
       >
         Start on WhatsApp
         <span className="grid size-10 place-items-center rounded-full bg-ink text-bone">

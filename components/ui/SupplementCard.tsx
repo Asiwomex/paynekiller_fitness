@@ -10,7 +10,7 @@ export function SupplementCard({ item }: { item: Supplement }) {
         <span className="display grid h-24 w-14 place-items-center rounded-full bg-bone text-3xl text-ink transition-colors duration-500 group-hover:bg-ember">
           {item.code}
         </span>
-        <span className="label text-ash">{item.size}</span>
+        <span className="label whitespace-nowrap text-ash">{item.size}</span>
       </div>
 
       <h3 className="display mt-8 text-5xl">{item.name}</h3>
@@ -29,7 +29,7 @@ export function SupplementCard({ item }: { item: Supplement }) {
           href={waLink(`Hi PayneKiller, I'd like to order ${item.name} (${item.size}).`)}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex h-11 items-center gap-2 rounded-full bg-bone pl-5 pr-4 text-sm font-medium text-ink transition-[background-color,transform] duration-300 hover:bg-ember active:scale-[0.97]"
+          className="flex h-11 items-center gap-2 rounded-full bg-bone pl-5 pr-4 text-sm font-medium text-ink transition-[background-color,transform] duration-300 hover:bg-ember active:scale-[0.96]"
         >
           Order <Arrow />
           <span className="sr-only">{item.name} on WhatsApp</span>
