@@ -18,20 +18,29 @@ const serif = Instrument_Serif({
   style: ["normal", "italic"],
 });
 
+const title = `${site.name} | Gym, Aerobics & Personal Training in Accra`;
+const shareImage = {
+  url: "/media/og-share.jpg",
+  width: 1200,
+  height: 630,
+  alt: "PayneKiller Fitness logo over an outdoor group training session in Accra",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: {
-    default: `${site.name} | Gym, Aerobics & Personal Training in Accra`,
-    template: `%s | ${site.name}`,
-  },
+  title: { default: title, template: `%s | ${site.name}` },
   description: site.description,
+  // Link previews in WhatsApp, iMessage, Telegram, X and so on.
   openGraph: {
     type: "website",
+    url: site.url,
     siteName: site.name,
+    title,
+    description: site.description,
     locale: "en_GH",
-    images: [{ url: "/media/og.jpg", width: 1200, height: 630, alt: "PayneKiller leading an outdoor group session" }],
+    images: [shareImage],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: { card: "summary_large_image", title, description: site.description, images: [shareImage] },
 };
 
 export const viewport: Viewport = {
@@ -44,7 +53,7 @@ const jsonLd = {
   name: site.name,
   description: site.description,
   url: site.url,
-  image: `${site.url}/media/og.jpg`,
+  image: `${site.url}/media/og-share.jpg`,
   telephone: site.phones.map((p) => p.tel),
   address: { "@type": "PostalAddress", addressLocality: site.city, addressCountry: "GH" },
   sameAs: site.socials.map((s) => s.href),

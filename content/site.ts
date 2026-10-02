@@ -6,7 +6,7 @@ export const site = {
   tagline: "No Pain No Gain",
   description:
     "Personal training, aerobics, group sessions and supplements with PayneKiller in Accra, Ghana. Book your first session on WhatsApp.",
-  url: "https://paynekillerfitness.com", // PLACEHOLDER domain
+  url: "https://paynekiller.lytaworks.com",
   city: "Accra",
   country: "Ghana",
   address: "Accra, Ghana", // PLACEHOLDER: add the gym's street address
